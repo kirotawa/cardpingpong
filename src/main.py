@@ -11,12 +11,12 @@ from . import config
 from pygame.locals import *
 import sys
 from .ppstates import  *
-from .states import make_state_machine
+from .ppstates import make_state_machine
 
 
 def main_():
     resources.init()
-    pygame.display.set_caption("Kanji Memo")
+    pygame.display.set_caption("Card Ping-Pong")
     pygame.mouse.set_visible(True)
     clock = pygame.time.Clock()
     state_machine = make_state_machine()
