@@ -10,7 +10,7 @@ from . import canvas
 from . import config
 from pygame.locals import *
 import sys
-from .ppstates import  *
+from .cardpinpongstates import  PresentationState
 from .ppstates import make_state_machine
 
 
@@ -19,7 +19,7 @@ def main_():
     pygame.display.set_caption("Card Ping-Pong")
     pygame.mouse.set_visible(True)
     clock = pygame.time.Clock()
-    state_machine = make_state_machine()
+    state_machine = make_state_machine(PresentationState())
 
     while True:
         clock.tick(60)
